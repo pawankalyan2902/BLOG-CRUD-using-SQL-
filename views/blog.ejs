@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="/blog.css">
+</head>
+
+<body>
+    <%-include("./includes/header") %>
+        <main>
+        <% if (posts.length==0) {%>
+            <h1 id="li_one">No Posts</h1>
+      <% }else{%> 
+      
+        <h1 id="li_one">All Posts</h1>
+        <% for(const data of posts ) {%>
+        <ul id="layout">
+                <li>
+                    <h1><%=data.TITLE%></h1>
+                </li>
+                <span id="cont">
+                    <li id="author_name">By <%=data.name %> </li>
+                    <li><%=data.SUMMARY %></li>
+                </span>
+                <div id="rud_operations">
+                    <li><a href="/delete/<%=data.id %>">Delete Post</a></li>
+                    <li><a href="/edit/<%=data.id %>">Edit Post</a></li>
+                    <form action="/view/<%=data.id %>" method="get">
+                        <input type="hidden">
+                        <li><button type="submit">View post</button></li>
+                    </form>
+                </div>
+            </ul>
+            <% } %>
+            <% } %>
+        </main>
+</body>
+
+</html>

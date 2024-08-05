@@ -1,0 +1,119 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    color: rgb(46, 45, 48);
+}
+
+ul {
+    list-style: none;
+    padding: 1rem 5rem;
+}
+
+#blog_header li h1 a {
+    font-size: 2rem;
+    padding-left: 3rem;
+}
+
+#blog_header a {
+    color: rgb(240, 248, 255);
+    text-decoration: none;
+    padding-right: 3rem;
+    font-size: 1.4rem;
+
+
+}
+
+#blog_header a:hover,
+#blog_header a:active {
+    color: rgb(255, 217, 0);
+}
+
+#blog_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(89, 0, 255);
+    margin-top: 0px;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 3rem;
+}
+
+main h1 {
+    text-align: center;
+}
+
+#layout li h2 {
+    margin: 0px;
+}
+
+#layout {
+    background-color: rgb(209, 180, 251);
+    width: 40rem;
+    margin:2rem auto;
+    text-align: center;
+    border-radius: 0.8rem;
+    box-shadow: 3px 3px 3px black;
+}
+
+#layout li {
+    margin: 1rem;
+}
+
+#rud_operations {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#rud_operations a {
+    padding: 8px;
+    text-decoration: none;
+    color: rgb(89, 0, 255);
+    font-weight: 900;
+    font-size: large;
+    transition: background-color 2s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+div button {
+    cursor: pointer;
+    font: inherit;
+    background-color: rgb(89, 0, 255);
+    border: 1px solid rgb(89, 0, 255);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+}
+
+#rud_operations a:hover,
+#rud_operations a:active {
+    background-color: rgb(71, 4, 196);
+    color: white;
+    border-radius: 8px;
+}
+
+div button:hover,
+div button:active {
+    background-color: rgb(71, 4, 196);
+    border-color: rgb(71, 4, 196);
+    color: white;
+}
+
+#cont li {
+    font-size: x-large;
+}
+
+#li_one {
+    margin: 3rem;
+}
+#author_name{
+    font-style: italic;
+}

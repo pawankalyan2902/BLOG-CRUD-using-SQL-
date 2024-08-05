@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="/blog.css">
+    <link rel="stylesheet" href="/view_post.css">
+</head>
+
+<body>
+    <%-include("./includes/header") %>
+        <main>
+            <ul id="content">
+                <li id="Title_header">
+                    <%=posts.TITLE%>
+                </li>
+                <div id="con">
+                    <li id="name">
+                       <a href="<%=posts.email_id%>"> <%= posts.name %></a>
+                    </li>
+                    <li id="date">
+                        <%=posts.human_readable%>
+                    </li>
+                </div>
+                <li id="title">
+                    <%=posts.SUMMARY%>
+                </li>
+                <li id="body">
+                    <%=posts.BODY%>
+                </li>
+            </ul>
+        </main>
+
+
+</body>
+
+</html>

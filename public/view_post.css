@@ -1,0 +1,48 @@
+main{
+    font-size: x-large;
+}
+#content{
+    text-align: left;
+    padding: 3rem 9rem;
+    margin: auto;
+}
+
+#title{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+
+}
+#name a{
+     text-decoration: none;
+    color:rgb(89, 0, 255);
+    border-right: 0.2px solid black;
+    padding-right: 1rem;
+    font-style: italic;
+    font-size: xx-large;
+    
+}
+#con{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+#date{
+    margin-left: 1rem;
+    color:#adaabc;
+    font-style: italic;
+    font-size: xx-large;
+}
+#Title_header{
+    font-size:xxx-large;
+    font-weight: 900;
+    padding-bottom: 2rem;
+}
+#name a:hover{
+    color: rgb(71, 4, 196);
+}
+#body{
+    white-space:pre-wrap ;
+}
